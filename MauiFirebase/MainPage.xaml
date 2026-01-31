@@ -1,0 +1,19 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiFirebase.MainPage">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label Text="SMART SEASONING DISPENSER"
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+        <Button Text="Drop Chili" Clicked="OnDropClicked" CommandParameter="Chili"/>
+        <Label x:Name="ChiliStatus" Text="Chili: Idle" />
+
+        <Button Text="Drop Pepper" Clicked="OnDropClicked" CommandParameter="Pepper"/>
+        <Label x:Name="PepperStatus" Text="Pepper: Idle" />
+
+        <Button Text="Drop Salt" Clicked="OnDropClicked" CommandParameter="Salt"/>
+        <Label x:Name="SaltStatus" Text="Salt: Idle" />
+    </VerticalStackLayout>
+</ContentPage>
